@@ -3,9 +3,14 @@
   <head> </head>
   <body>
     <script type="module">
-      for (let i = 0; i < 3; i++) {
-      // shows 0, then 1, then 2
-      alert(i);
+      const band = {
+        name: "B-52s",
+        origin: "Athens, GA",
+        active: true,
+      };
+      // Iterate over the band object.
+      for (const key in band) {
+        console.log(`${key}: ${band[key]}`);
       }
     </script>
   </body>
